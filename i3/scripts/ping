@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ping=$(cat /tmp/ping.txt | sed -n 's/.*km]: \([0-9]\{1,\}\.[0-9]\{1,\}\).*/\1/p')
+
+echo "$ping ms"

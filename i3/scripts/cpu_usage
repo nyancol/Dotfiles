@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cpu_idle=$(sar -u 2 3 | awk -F' ' '{print $9}' | sed '1,5d')
+echo $(echo "100-$cpu_idle" | bc)

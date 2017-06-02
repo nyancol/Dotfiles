@@ -1,0 +1,5 @@
+#!/bin/sh
+
+speed=$(cat /tmp/upload.txt | sed -n 's/.*Upload: \([0-9]\{1,\}\.[0-9]\{2,\}\).*/\1/p')
+
+echo "$speed Mb/s"

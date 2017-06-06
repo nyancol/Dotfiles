@@ -1,0 +1,18 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+# define blue #268bd2
+# define dark_blue #205171
+
+# define dark_green #188407
+# define green #4dcc26
+
+# define fg green
+# define dark_fg dark_green
+
+rofi.color-enabled: true
+rofi.color-window: #393939, #393939, fg
+rofi.color-normal: #393939, #ffffff, #393939, fg, #ffffff
+rofi.color-active: #393939, #268bd2, #393939, fg, #dark_fg
+rofi.color-urgent: #393939, #f3843d, #393939, fg, #ffc39c

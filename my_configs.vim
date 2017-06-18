@@ -1,4 +1,4 @@
-
+set number
 set rnu
 
 " Mapping leader
@@ -40,3 +40,28 @@ let g:syntastic_c_include_dirs = [ '~/Qt/5.7/clang_64' ]
 
 " rot13 all text
 map <leader>r ggVGg?
+
+" nohighlight
+nnoremap <C-l> :nohlsearch<CR><C-l>
+
+" incremental search
+set incsearch
+set hlsearch
+
+autocmd InsertEnter * :setlocal nohlsearch
+autocmd InsertLeave * :setlocal hlsearch
+
+cmap w!! %!sudo tee > /dev/null %
+
+nnoremap <A+j> :m+<CR>==
+nnoremap <A+k> :m-2<CR>==
+nnoremap <A+h> <<
+nnoremap <A+l> >>
+inoremap <A+j> <Esc>:m+<CR>==gi
+inoremap <A+k> <Esc>:m-2<CR>==gi
+inoremap <A+h> <Esc><<`]a
+inoremap <A+l> <Esc>>>`]a
+vnoremap <A+j> :m'>+<CR>gv=gv
+vnoremap <A+k> :m-2<CR>gv=gv
+vnoremap <A+h> <gv
+vnoremap <A+l> >gv

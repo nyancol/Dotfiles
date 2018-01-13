@@ -26,11 +26,11 @@ endif
 
 " Color scheme
 set background=dark
-colorscheme hapycolor
+colorscheme desert
 
 " Lightline
 set laststatus=2
-let g:lightline = { 'colorscheme': 'hapycolor' }
+let g:lightline = { 'colorscheme': 'wombat' }
 
 " CtrlP
 nmap <leader>j :CtrlP<CR>

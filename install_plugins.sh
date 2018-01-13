@@ -1,7 +1,6 @@
 #!/bin/bash
 
-PLUGIN_DIR=~/.vim/start/bundle/start
-cp ./.vimrc ~/
+PLUGIN_DIR=~/.vim/pack/bundle/start
 
 mkdir -p $PLUGIN_DIR
 cd $PLUGIN_DIR
